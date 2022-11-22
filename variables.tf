@@ -24,7 +24,7 @@ variable "enable_classiclink_dns_support" {
 
 variable "preferred_number_of_public_subnets" {
   type        = number
-  description = "number of public subnets"
+  description = "Number of public subnets"
 }
 
 variable "preferred_number_of_private_subnets" {
@@ -46,10 +46,28 @@ variable "tags" {
 
 variable "environment" {
   type        = string
-  description = "Environment"
+  description = "Enviroment"
 }
 
-variable "ami" {
+variable "ami-bastion" {
+  type        = string
+  description = "AMI ID for the launch template"
+}
+
+
+variable "ami-web" {
+  type        = string
+  description = "AMI ID for the launch template"
+}
+
+
+variable "ami-nginx" {
+  type        = string
+  description = "AMI ID for the launch template"
+}
+
+
+variable "ami-sonar" {
   type        = string
   description = "AMI ID for the launch template"
 }
@@ -63,6 +81,7 @@ variable "account_no" {
   type        = number
   description = "the account number"
 }
+
 
 variable "master-username" {
   type        = string

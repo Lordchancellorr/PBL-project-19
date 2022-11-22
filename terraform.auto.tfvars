@@ -24,13 +24,13 @@ ami-nginx = "ami-016dcd941c60b6e8f"
 
 ami-sonar = "ami-0ccf6f3335080e9b4"
 
-keypair = "devops"
+keypair = ""
 
-master-password = "devopspblproject"
+master-password = "olatunde-00"
 
-master-username = "david"
+master-username = "lordchancellor"
 
-account_no = "696742900004"
+account_no = "999569288046"
 
 tags = {
   Owner-Email     = "olatundeolamide03@gmai"
