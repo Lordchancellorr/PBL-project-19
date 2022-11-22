@@ -1,5 +1,5 @@
 variable "region" {
-  default = "eu-west-1"
+  default = "us-east-1"
 }
 
 variable "vpc_cidr" {
@@ -24,7 +24,7 @@ variable "enable_classiclink_dns_support" {
 
 variable "preferred_number_of_public_subnets" {
   type        = number
-  description = "Number of public subnets"
+  description = "number of public subnets"
 }
 
 variable "preferred_number_of_private_subnets" {
@@ -46,28 +46,10 @@ variable "tags" {
 
 variable "environment" {
   type        = string
-  description = "Enviroment"
+  description = "Environment"
 }
 
-variable "ami-bastion" {
-  type        = string
-  description = "AMI ID for the launch template"
-}
-
-
-variable "ami-web" {
-  type        = string
-  description = "AMI ID for the launch template"
-}
-
-
-variable "ami-nginx" {
-  type        = string
-  description = "AMI ID for the launch template"
-}
-
-
-variable "ami-sonar" {
+variable "ami" {
   type        = string
   description = "AMI ID for the launch template"
 }
@@ -81,7 +63,6 @@ variable "account_no" {
   type        = number
   description = "the account number"
 }
-
 
 variable "master-username" {
   type        = string
