@@ -24,7 +24,7 @@ ami-nginx = "ami-016dcd941c60b6e8f"
 
 ami-sonar = "ami-0ccf6f3335080e9b4"
 
-keypair = ""
+keypair = "aws projects"
 
 master-password = "olatunde-00"
 

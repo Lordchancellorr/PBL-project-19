@@ -52,35 +52,32 @@ variable "ami-nginx" {
 }
 
 variable "nginx-alb-tgt" {
-  type        = string
   description = "nginx reverse proxy target group"
 }
 
 variable "wordpress-alb-tgt" {
-  type        = string
   description = "wordpress target group"
 }
 
 
 variable "tooling-alb-tgt" {
-  type        = string
   description = "tooling target group"
 }
 
 
 variable "max_size" {
   type        = number
-  description = "maximum number for Autoscaling"
+  description = "maximum number for autoscaling"
 }
 
 variable "min_size" {
   type        = number
-  description = "minimum number for Autoscaling"
+  description = "minimum number for autoscaling"
 }
 
 variable "desired_capacity" {
   type        = number
-  description = "Desired number of instance in Autoscaling group"
+  description = "Desired number of instance in autoscaling group"
 
 }
 

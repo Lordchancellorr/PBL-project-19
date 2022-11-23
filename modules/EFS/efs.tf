@@ -23,7 +23,7 @@ EOF
 
 # create key alias
 resource "aws_kms_alias" "alias" {
-  name          = "alias/test/kms"
+  name          = "alias/testing/kms"
   target_key_id = aws_kms_key.ACS-kms.key_id
 }
 
@@ -100,3 +100,4 @@ resource "aws_efs_access_point" "tooling" {
 
   }
 }
+
